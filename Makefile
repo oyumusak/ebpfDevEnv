@@ -1,5 +1,5 @@
 all:
-	qemu-system-x86_64 -boot d -m 2048 -hda srcs/mydisk.qcow2 -net nic -net user,hostfwd=tcp::4242-:4242
+	qemu-system-x86_64 -enable-kvm -smp 4 -boot d -m 2048 -hda srcs/mydisk.qcow2 -net nic -net user,hostfwd=tcp::4242-:4242
 connect:
 		ssh bpf@localhost -p 4242
 down:
