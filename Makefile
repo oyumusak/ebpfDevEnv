@@ -6,6 +6,7 @@ down:
 		@pkill -9 qemu-system-x86_64
 
 download:
+	mkdir -p srcs
 	curl -o srcs/mydisk.qcow2 http://95.70.251.21/mydisk.qcow2
 #mount:
 #	pgrep -af qemu | awk '{print $1}' | xargs -I {} kill -9 {}
