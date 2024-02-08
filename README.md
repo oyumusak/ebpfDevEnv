@@ -16,6 +16,7 @@ Komutlar
 
 Warning ve bugları fixlemek için adımları takip edin
 
+<p>
 apt purge bpfcc-tools libbpfcc python3-bpfcc
 wget https://github.com/iovisor/bcc/releases/download/v0.25.0/bcc-src-with-submodule.tar.gz
 tar xf bcc-src-with-submodule.tar.gz
@@ -28,3 +29,4 @@ cd build/
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DPYTHON_CMD=python3 ..
 make
 checkinstall
+</p>
