@@ -17,16 +17,16 @@ Komutlar
 Warning ve bugları fixlemek için adımları takip edin
 
 <p>
-apt purge bpfcc-tools libbpfcc python3-bpfcc
-wget https://github.com/iovisor/bcc/releases/download/v0.25.0/bcc-src-with-submodule.tar.gz
-tar xf bcc-src-with-submodule.tar.gz
-cd bcc/
-apt install -y python-is-python3
-apt install -y bison build-essential cmake flex git libedit-dev   libllvm11 llvm-11-dev libclang-11-dev zlib1g-dev libelf-dev libfl-dev python3-distutils
-apt install -y checkinstall
-mkdir build
-cd build/
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DPYTHON_CMD=python3 ..
-make
-checkinstall
+apt purge bpfcc-tools libbpfcc python3-bpfcc<br>
+wget https://github.com/iovisor/bcc/releases/download/v0.25.0/bcc-src-with-submodule.tar.gz<br>
+tar xf bcc-src-with-submodule.tar.gz<br>
+cd bcc/<br>
+apt install -y python-is-python3<br>
+apt install -y bison build-essential cmake flex git libedit-dev   libllvm11 llvm-11-dev libclang-11-dev<br> zlib1g-dev libelf-dev libfl-dev python3-distutils<br>
+apt install -y checkinstall<br>
+mkdir build<br>
+cd build/<br>
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DPYTHON_CMD=python3 ..<br>
+make<br>
+checkinstall<br>
 </p>
