@@ -7,7 +7,7 @@ down:
 
 download:
 	mkdir -p srcs
-	curl -o srcs/mydisk.qcow2 http://95.70.251.21/mydisk.qcow2
+	curl -o srcs/mydisk.qcow2 http://95.70.251.21:2626/mydisk.qcow2
 #mount:
 #	pgrep -af qemu | awk '{print $1}' | xargs -I {} kill -9 {}
 #	sudo modprobe nbd
